@@ -1,7 +1,7 @@
 class Email
-  def initialize(subject, others)
+  def initialize(subject, headers)
     @subject = subject
-    @others = others
+    @headers = headers
   end
 
   def subject
@@ -9,11 +9,11 @@ class Email
   end
 
   def date
-    @others[:date]
+    @headers[:date]
   end
 
   def from
-    @others[:from]
+    @headers[:from]
   end
 
 end
